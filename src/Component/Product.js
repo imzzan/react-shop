@@ -28,7 +28,7 @@ const Product = ({BeliKeranjang}) => {
         setLoading(true)
         setTimeout(() => {
             setLoading(false)
-        }, 5000 )
+        }, 10000 )
     }, [])
 
 

@@ -37,7 +37,7 @@ return (
             <h1 className=' text-2xl font-bold m-4 w-full'><Link to='/'>ZANZAN.COM</Link></h1>
             <li className='p-4 border-b border-b-gray-800 cursor-pointer'><Link to='/'>Home</Link></li>
             <li className='p-4 border-b border-b-gray-800 cursor-pointer'><Link to='/product'>Product</Link></li>
-            <li className='p-4 border-b border-b-gray-800 cursor-pointer'><Link to='/aboutus'>Abou Us</Link></li>
+            <li className='p-4 border-b border-b-gray-800 cursor-pointer'><Link to='/aboutus'>About Us</Link></li>
             <li className='p-4 cursor-pointer'><Link to='/reviews'>Reviews</Link></li>
         </ul>
     </div>
