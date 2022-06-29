@@ -34,7 +34,7 @@ const Product = ({BeliKeranjang}) => {
 
     return (
         <div className='bg-white h-[100%] pb-20'>
-            <ul className='flex justify-center pt-20 md:gap-x-14 gap-x-4'>
+            <ul className='md:flex justify-center pt-20 md:gap-x-14 hidden'>
                 <li className=' font-bold hover:border-b-2 border-black md:text-[1.1rem] text-sm cursor-pointer'>All</li>
                 <li className=' font-bold hover:border-b-2 border-black md:text-[1.1rem] text-sm cursor-pointer'>Men's Fashion</li>
                 <li className=' font-bold hover:border-b-2 border-black md:text-[1.1rem] text-sm cursor-pointer'>Woman's Fashion</li>
