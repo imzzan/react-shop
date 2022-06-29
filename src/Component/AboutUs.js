@@ -14,7 +14,7 @@ const AboutUs = () => {
 
   return (
     <div className=' h-[100%] bg-white p-10'>
-      <div className=' md:flex justify-center mx-auto items-center gap-10 flex-1 shadow-sm shadow-slate-400 p-5'>
+      <div className=' md:flex justify-center mx-auto items-center gap-10 flex-1 shadow-sm shadow-slate-400 p-2'>
         <motion.img variants={AboutUsAnimation} initial='hidden' animate='visible' src="/asset/2.jpg" alt="" className=' md:w-1/2 rounded-3xl shadow-lg mx-auto w-full mb-5' />
         <motion.div variants={TextAnimation} initial='hidden' animate='visible' className=' text-center'>
           <h1 className=' text-2xl font-bold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, nesciunt?</h1>
@@ -25,7 +25,7 @@ const AboutUs = () => {
             m pariatur natus, fugit earum sit necessitatibus iure in totam distinctio blanditiis!</p>
         </motion.div>
       </div>
-      <div className=' md:flex justify-center mx-auto items-center gap-10 flex-1 shadow-sm shadow-slate-400 p-5 mt-16'>
+      <div className=' md:flex justify-center mx-auto items-center gap-10 flex-1 shadow-sm shadow-slate-400 p-2 mt-16'>
         <div className=' text-center mb-5' data-aos="fade-left" data-aos-delay="200">
           <h1 className=' text-2xl font-bold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, nesciunt?</h1>
           <p className=' capitalize'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque iure quidem

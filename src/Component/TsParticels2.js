@@ -31,7 +31,7 @@ const Tsparticles = () => {
     },
     "particles": {
         "number": {
-            "value": 15,
+            "value": 10,
             "density": {
                 "enable": false,
                 "value_area": 800
@@ -85,7 +85,7 @@ const Tsparticles = () => {
         },
         "move": {
             "enable": true,
-            "speed": 10,
+            "speed": 5,
             "direction": "none",
             "random": false,
             "straight": false,
