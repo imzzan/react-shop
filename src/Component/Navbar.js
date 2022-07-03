@@ -1,12 +1,13 @@
 import React, {useState} from 'react';
-import {MdOutlineLogin, MdPersonAddAlt, MdOutlineAddShoppingCart} from 'react-icons/md';
+import {MdOutlineLogin, MdPersonAddAlt} from 'react-icons/md';
+import {BsPersonCircle} from 'react-icons/bs';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import {Link} from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { NavbarAnimation } from './../Animation/NavbarAnimation';
 import { LogoAnimation } from './../Animation/NavbarAnimation';
 
-const Navbar = ({state}) => {
+const Navbar = () => {
 const [nav, setNav] = useState(true);
 
 const handleClick = () => {
@@ -25,8 +26,8 @@ return (
         </motion.ul>
         <motion.ul variants={NavbarAnimation} initial='hidden' animate='visible' className=' hidden md:flex'>
             <li className=' p-2 border rounded-sm mx-3 cursor-pointer'><Link to='/login'>Login <MdOutlineLogin className=' inline'/></Link></li>
-            <li className=' p-2 border rounded-sm mx-3 cursor-pointer'>Signin <MdPersonAddAlt className=' inline'/></li>
-            <li className=' p-2 border rounded-sm mx-3 cursor-pointer'>Keranjang <MdOutlineAddShoppingCart className=' inline'/>({state})</li>
+            <li className=' p-2 border rounded-sm mx-3 cursor-pointer'><Link to='/signin'>Signin<MdPersonAddAlt className=' inline'/></Link></li>
+            <li className=' p-2 border rounded-sm mx-3 cursor-pointer'><Link to='/acount'>Account<BsPersonCircle className=' inline ml-1'/></Link></li>
         </motion.ul>
         <div className=' block md:hidden cursor-pointer' onClick={handleClick}>
             {
@@ -38,7 +39,10 @@ return (
             <li className='p-4 border-b border-b-gray-800 cursor-pointer'><Link to='/'>Home</Link></li>
             <li className='p-4 border-b border-b-gray-800 cursor-pointer'><Link to='/product'>Product</Link></li>
             <li className='p-4 border-b border-b-gray-800 cursor-pointer'><Link to='/aboutus'>About Us</Link></li>
-            <li className='p-4 cursor-pointer'><Link to='/reviews'>Reviews</Link></li>
+            <li className='p-4 cursor-pointer border-b border-b-gray-800'><Link to='/reviews'>Reviews</Link></li>
+            <li className=' p-2 border rounded-sm cursor-pointer'><Link to='/login'>Login <MdOutlineLogin className=' inline'/></Link></li>
+            <li className=' p-2 border rounded-sm cursor-pointer'><Link to='/signin'>Signin <MdPersonAddAlt className=' inline'/></Link></li>
+            <li className=' p-2 border rounded-sm cursor-pointer'><Link to='/acount'>Account <BsPersonCircle className=' inline ml-1'/></Link></li>
         </ul>
     </div>
     </>

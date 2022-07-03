@@ -6,6 +6,9 @@ import AboutUs from "./Component/AboutUs";
 import Reviews from "./Component/Reviews";
 import LogIn from "./Component/LogIn";
 import { useState } from "react";
+import SignIn from './Component/SignIn';
+import Acount from "./Component/Acount";
+import EditProfile from "./Component/EditProfile";
 
 function App() {
 
@@ -18,13 +21,16 @@ function App() {
   return (
     <div>
     <BrowserRouter>
-      <Navbar state={state}/>
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/product" element={<Product BeliKeranjang={BeliKeranjang}/>}/>
+        <Route path="/product" element={<Product state={state} BeliKeranjang={BeliKeranjang}/>}/>
         <Route path="/aboutus" element={<AboutUs/>}/>
         <Route path="/reviews" element={<Reviews/>}/>
-        <Route path="login" element={<LogIn/>}/>
+        <Route path="/login" element={<LogIn/>}/>
+        <Route path="/signin" element={<SignIn/>}/>
+        <Route path='/acount' element={<Acount/>}/>
+        <Route path='/editprofile' element={<EditProfile/>}/>
       </Routes>
     </BrowserRouter>
     </div>
