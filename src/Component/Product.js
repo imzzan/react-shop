@@ -30,7 +30,7 @@ const Product = ({BeliKeranjang, state}) => {
         setTimeout(() => {
             setLoading(false)
         }, 5000 )
-    }, [])
+    }, []);
 
 
     return (
